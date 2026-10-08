@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz — Ada Lovelace — Lovelace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-quiz="ada">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/lovelace.png" alt="" onerror="this.classList.add('ausente')">
+        <span class="brand-name">Lovelace</span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="mulheres.html" aria-current="page">Mulheres</a>
+        <a href="conhecimento.html">Conhecimento</a>
+        <a href="jornada.html">Minha Jornada</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="wrap estreito">
+      <p class="migalhas"><a href="index.html">Início</a> / <a href="mulheres.html">Mulheres</a> / <a href="ada.html">Ada Lovelace</a> / Quiz</p>
+      <span class="etiqueta">Quiz</span>
+      <h1>Quiz: Ada Lovelace</h1>
+      <p class="subtitulo">Três perguntas sobre o que você leu. Acertando todas, a área de conhecimento <strong>Matemática &amp; Computação</strong> é desbloqueada.</p>
+      <p id="ja-concluido" class="aviso-ok" hidden>Você já concluiu este quiz e a área Matemática &amp; Computação está desbloqueada. Fique à vontade para refazê-lo.</p>
+      <form id="quiz-form" class="quiz-form" novalidate>
+        <fieldset class="pergunta" data-q="1">
+          <legend>1. Qual máquina, projetada por Charles Babbage, inspirou as anotações de Ada Lovelace?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="a"><span>Máquina de Escrever</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="b"><span>Máquina Analítica</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="c"><span>Telégrafo elétrico</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="d"><span>Máquina a vapor</span></label>
+        </fieldset>
+        <fieldset class="pergunta" data-q="2">
+          <legend>2. As anotações de Ada incluíram uma sequência de operações para calcular quais números?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="a"><span>Números primos</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="b"><span>Números de Fibonacci</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="c"><span>Números de Bernoulli</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="d"><span>Números imaginários</span></label>
+        </fieldset>
+        <fieldset class="pergunta" data-q="3">
+          <legend>3. Por que Ada é frequentemente lembrada na história da programação?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="a"><span>Por publicar um algoritmo destinado a ser processado por uma máquina</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="b"><span>Por construir o primeiro computador eletrônico</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="c"><span>Por inventar a internet</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="d"><span>Por criar o primeiro videogame</span></label>
+        </fieldset>
+        <p id="msg-erro" class="msg-erro" role="alert"></p>
+        <div class="acoes">
+          <button type="submit" class="btn" id="btn-enviar">Enviar respostas</button>
+          <a class="btn btn-sec" href="ada.html">Reler a página</a>
+          <a class="btn btn-sec" href="mulheres.html">← Voltar para Mulheres</a>
+        </div>
+      </form>
+      <div id="resultado" class="resultado" role="status" aria-live="polite" hidden></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Lovelace — Mulheres na Ciência</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

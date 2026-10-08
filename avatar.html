@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avatar — Lovelace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/lovelace.png" alt="" onerror="this.classList.add('ausente')">
+        <span class="brand-name">Lovelace</span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="mulheres.html">Mulheres</a>
+        <a href="conhecimento.html">Conhecimento</a>
+        <a href="jornada.html" aria-current="page">Minha Jornada</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="wrap">
+      <p class="migalhas"><a href="index.html">Início</a> / <a href="jornada.html">Minha Jornada</a> / Avatar</p>
+      <span class="etiqueta">Opcional</span>
+      <h1>Meu avatar</h1>
+      <p class="subtitulo">Um detalhe divertido: monte um avatar do seu jeito.</p>
+      <p>Todas as opções estão disponíveis desde o início; o que se desbloqueia com os quizzes são as áreas de conhecimento. Suas escolhas ficam salvas neste navegador.</p>
+
+      <div class="avatar-layout">
+        <div class="avatar-coluna">
+          <div class="avatar-palco" id="avatar-palco">
+            <div class="avatar-aviso">As imagens do avatar ainda não foram adicionadas. Coloque os arquivos PNG na pasta img, com os nomes indicados no projeto, para ver o avatar montado aqui.</div>
+          </div>
+          <div class="avatar-botoes">
+            <button type="button" class="btn-discreto" id="btn-sortear">Sortear aparência</button>
+            <button type="button" class="btn-discreto" id="btn-restaurar">Restaurar padrão</button>
+          </div>
+          <p class="salvo" id="salvo">As escolhas são salvas automaticamente.</p>
+        </div>
+        <div class="partes" id="partes">
+          <p>Carregando as opções do avatar… Este recurso precisa do JavaScript ativado.</p>
+        </div>
+      </div>
+
+      <div class="acoes">
+        <a class="btn" href="jornada.html">Voltar para Minha Jornada</a>
+        <a class="btn btn-sec" href="mulheres.html">Continuar explorando</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Lovelace — Mulheres na Ciência</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

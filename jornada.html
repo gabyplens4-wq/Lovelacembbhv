@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha Jornada — Lovelace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/lovelace.png" alt="" onerror="this.classList.add('ausente')">
+        <span class="brand-name">Lovelace</span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="mulheres.html">Mulheres</a>
+        <a href="conhecimento.html">Conhecimento</a>
+        <a href="jornada.html" aria-current="page">Minha Jornada</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="wrap">
+      <p class="migalhas"><a href="index.html">Início</a> / Minha Jornada</p>
+      <span class="etiqueta">Caderno de bordo</span>
+      <h1>Minha Jornada</h1>
+      <p class="subtitulo">Um espaço para acompanhar o que você já descobriu.</p>
+
+      <p class="contagem" id="contagem-texto">0 de 5 mulheres conhecidas</p>
+      <div class="barra" data-barra role="progressbar" aria-label="Progresso da jornada" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="barra-preenchida"></div>
+      </div>
+      <p class="barra-legenda" id="barra-legenda">0% da jornada concluída</p>
+
+      <div class="acoes">
+        <a class="btn" href="mulheres.html">Continuar explorando</a>
+        <a class="btn btn-sec" href="conhecimento.html">Ver conhecimentos</a>
+        <a class="btn btn-sec" href="avatar.html">Personalizar meu avatar</a>
+      </div>
+
+      <hr class="fita">
+
+      <div class="jornada-grid">
+        <div>
+          <section class="secao">
+            <div class="secao-titulo"><h2>Mulheres e quizzes</h2></div>
+            <p>Quizzes concluídos: <strong><span data-count-total>0</span> de 5</strong></p>
+            <ul class="lista-registro">
+            <li>
+              <span class="info"><a href="ada.html">Ada Lovelace</a><small>Matemática e Computação</small></span>
+              <span class="selo" data-selo-quiz="ada">Quiz pendente</span>
+            </li>
+            <li>
+              <span class="info"><a href="marie.html">Marie Curie</a><small>Física e Química</small></span>
+              <span class="selo" data-selo-quiz="marie">Quiz pendente</span>
+            </li>
+            <li>
+              <span class="info"><a href="katherine.html">Katherine Johnson</a><small>Matemática e Espaço</small></span>
+              <span class="selo" data-selo-quiz="katherine">Quiz pendente</span>
+            </li>
+            <li>
+              <span class="info"><a href="carolina.html">Carolina Maria de Jesus</a><small>Literatura e Sociedade</small></span>
+              <span class="selo" data-selo-quiz="carolina">Quiz pendente</span>
+            </li>
+            <li>
+              <span class="info"><a href="jane.html">Jane Addams</a><small>Sociedade e Reforma Social</small></span>
+              <span class="selo" data-selo-quiz="jane">Quiz pendente</span>
+            </li>
+            </ul>
+          </section>
+
+          <section class="secao">
+            <div class="secao-titulo"><h2>Conhecimentos desbloqueados</h2></div>
+            <p>Áreas desbloqueadas: <strong><span data-count-total>0</span> de 5</strong></p>
+            <ul class="lista-registro">
+            <li>
+              <span class="info"><a href="conhecimento-computacao.html">Matemática &amp; Computação</a><small>Com Ada Lovelace</small></span>
+              <span class="selo" data-selo-area="ada">Área bloqueada</span>
+            </li>
+            <li>
+              <span class="info"><a href="conhecimento-fisica-quimica.html">Física &amp; Química</a><small>Com Marie Curie</small></span>
+              <span class="selo" data-selo-area="marie">Área bloqueada</span>
+            </li>
+            <li>
+              <span class="info"><a href="conhecimento-matematica-espaco.html">Matemática &amp; Espaço</a><small>Com Katherine Johnson</small></span>
+              <span class="selo" data-selo-area="katherine">Área bloqueada</span>
+            </li>
+            <li>
+              <span class="info"><a href="conhecimento-literatura-sociedade.html">Literatura &amp; Sociedade</a><small>Com Carolina Maria de Jesus</small></span>
+              <span class="selo" data-selo-area="carolina">Área bloqueada</span>
+            </li>
+            <li>
+              <span class="info"><a href="conhecimento-reforma-social.html">Sociedade &amp; Reforma Social</a><small>Com Jane Addams</small></span>
+              <span class="selo" data-selo-area="jane">Área bloqueada</span>
+            </li>
+            </ul>
+          </section>
+        </div>
+
+        <aside>
+          <section class="secao">
+            <div class="secao-titulo"><h2>Meu avatar</h2></div>
+            <div class="avatar-palco pequeno" data-avatar-preview>
+              <div class="avatar-aviso">As imagens do avatar ainda não foram adicionadas à pasta img.</div>
+            </div>
+            <p class="salvo"><a href="avatar.html">Personalizar meu avatar</a></p>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Lovelace — Mulheres na Ciência</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

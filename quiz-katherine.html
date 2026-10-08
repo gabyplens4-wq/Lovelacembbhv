@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz — Katherine Johnson — Lovelace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-quiz="katherine">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/lovelace.png" alt="" onerror="this.classList.add('ausente')">
+        <span class="brand-name">Lovelace</span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="mulheres.html" aria-current="page">Mulheres</a>
+        <a href="conhecimento.html">Conhecimento</a>
+        <a href="jornada.html">Minha Jornada</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="wrap estreito">
+      <p class="migalhas"><a href="index.html">Início</a> / <a href="mulheres.html">Mulheres</a> / <a href="katherine.html">Katherine Johnson</a> / Quiz</p>
+      <span class="etiqueta">Quiz</span>
+      <h1>Quiz: Katherine Johnson</h1>
+      <p class="subtitulo">Três perguntas sobre o que você leu. Acertando todas, a área de conhecimento <strong>Matemática &amp; Espaço</strong> é desbloqueada.</p>
+      <p id="ja-concluido" class="aviso-ok" hidden>Você já concluiu este quiz e a área Matemática &amp; Espaço está desbloqueada. Fique à vontade para refazê-lo.</p>
+      <form id="quiz-form" class="quiz-form" novalidate>
+        <fieldset class="pergunta" data-q="1">
+          <legend>1. Em qual agência trabalhou Katherine Johnson?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="a"><span>Agência Espacial Europeia</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="b"><span>Observatório Nacional</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="c"><span>Departamento de Correios</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q1" value="d"><span>NASA</span></label>
+        </fieldset>
+        <fieldset class="pergunta" data-q="2">
+          <legend>2. Os cálculos da missão de qual astronauta foram verificados por Katherine Johnson?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="a"><span>Yuri Gagarin</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="b"><span>John Glenn</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="c"><span>Sally Ride</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q2" value="d"><span>Charles Lindbergh</span></label>
+        </fieldset>
+        <fieldset class="pergunta" data-q="3">
+          <legend>3. Seus cálculos ajudaram principalmente em quê?</legend>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="a"><span>Trajetórias e voos espaciais</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="b"><span>Previsão do tempo para a agricultura</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="c"><span>Construção de submarinos</span></label>
+          <label class="opcao-quiz"><input type="radio" name="q3" value="d"><span>Criação de linguagens de programação</span></label>
+        </fieldset>
+        <p id="msg-erro" class="msg-erro" role="alert"></p>
+        <div class="acoes">
+          <button type="submit" class="btn" id="btn-enviar">Enviar respostas</button>
+          <a class="btn btn-sec" href="katherine.html">Reler a página</a>
+          <a class="btn btn-sec" href="mulheres.html">← Voltar para Mulheres</a>
+        </div>
+      </form>
+      <div id="resultado" class="resultado" role="status" aria-live="polite" hidden></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Lovelace — Mulheres na Ciência</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

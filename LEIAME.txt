@@ -1,0 +1,11 @@
+Coloque aqui os arquivos PNG (fundo transparente, todos do mesmo tamanho, para as camadas do avatar se alinharem):
+
+lovelace.png (logo do site)
+pele01.png ... pele06.png
+olhos01.png ... olhos07.png
+sobrancelha01.png ... sobrancelha08.png
+boca01.png ... boca06.png
+cabelo01.png ... cabelo15.png  (5 tons x 3 estilos: 01-03 = tom 1, 04-06 = tom 2, 07-09 = tom 3, 10-12 = tom 4, 13-15 = tom 5)
+roupa01.png ... roupa03.png
+
+Enquanto os arquivos não existirem, o site funciona normalmente e mostra apenas os números das opções do avatar.
